@@ -22,20 +22,28 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Internet Information Services (IIS)
+- PHP Manager for Internet Information Services (IIS)
 - Rewrite Module
 - Visual C++
-- PHP Manager 
+- PHP 7.3.8 (file)
 - My SQL
 - HeidiSQL
 
 <h2>Installation Steps</h2>
 
 <p>
+<img src="https://i.imgur.com/f807VMW.png"/>
+</p>
+<p>
+First, go to portal.azure.com, create a resource group, then create a virtual machine.
+</p>
+<br />
+
+<p>
 <img src="https://i.imgur.com/KLzsL9o.png"/>
 </p>
 <p>
-First, go to portal.azure.com, create a resource group, then create a virtual machine. Then open up remote desktop, put in the public IP address, then enter your credentials.
+Open up remote desktop, put in the public IP address, then enter your credentials.
 </p>
 <br />
 
@@ -48,9 +56,71 @@ Next, go to control panel--->Programs--->Turn features on or off--->Internet Inf
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/BlfYFbG.png"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>Install PHP Manager for IIS. Then install the rewrite module.
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/Jddb6Q7.png"/>
+</p>
+<p>
+Next, create a file called PHP in the "C:" portion of File Explorer
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/6zx7I53.png"/>
+</p>
+<p>
+Download php 7.3.8 and click "keep anyway"
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/osnBibj.png"/>
+</p>
+<p>
+Unzip the contents of PHP 7.3.8 into the C:\PHP file. Then , download the Visual C++ file (VC_redist.x86.exe)
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/W19Bk7E.png"/>
+</p>
+<p>
+Right Click IIS in Start, and press "run as admin"
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/9kzCJaP.png"/>
+</p>
+<p>
+Download the osTicket file. Within C:\inetpub\wwwroot, rename the "upload" folder to "osTicket"
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/1od21Xn.png"/>
+</p>
+<p>
+Open IIS, refresh and go to sites --->Default --->osTicket. On the right click Browse*80. After the osticket page comes up, go back to IIS and double click PHP manager Enable: php_imap.dll, php_intl.dll, and php_opcache.dll. Refresh the osticket page and observe changes
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/NdmOujh.png"/>
+</p>
+<p>
+Go to inetpub> wwwroot> osticket>include and rename "ost-sampleconfig" to "ost-config"
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/NdmOujh.png"/>
+</p>
+<p>
+Input info for osTicket account
+</p>
