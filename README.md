@@ -119,8 +119,65 @@ Go to inetpub> wwwroot> osticket>include and rename "ost-sampleconfig" to "ost-c
 <br />
 
 <p>
-<img src="https://i.imgur.com/NdmOujh.png"/>
+<img src="https://i.imgur.com/lNvmzjc.png"/>
 </p>
 <p>
 Input info for osTicket account
 </p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/mxPzUjx.png"/>
+</p>
+<p>
+Download Heidi SQL. Enter credentials for your "root" account
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/mxPzUjx.png"/>
+</p>
+<p>
+Enter "root" account in the basic info for osTicket
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/KDkCpCp.png"/>
+</p>
+<p>
+Enable the database in Heidi SQL
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/VY8Fi5i.png"/>
+</p>
+<p>
+A congratulations page should appear when this is done.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/0h8JtWf.png"/>
+</p>
+<p>
+Delete the setup folder in the C:\-->inetpub--->wwwroot
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/cwFcOdP.png"/>
+</p>
+<p>
+Go to osTicket--->include--> right click ost-config.php--->more options-->properties-->security-->advanced-->change permissions--->select a principal-->enter "Everyone"--press ok
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/dNVdTu8.png"/>
+</p>
+<p>
+Enter osTicket credentials and log in
+</p>
+<br />
